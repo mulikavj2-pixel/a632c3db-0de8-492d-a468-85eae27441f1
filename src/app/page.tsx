@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -7,7 +7,7 @@ import TagAboutCard from '@/components/sections/about/TagAboutCard';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
 import TeamCardTen from '@/components/sections/team/TeamCardTen';
-import TestimonialCardNine from '@/components/sections/testimonial/TestimonialCardNine';
+import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
 import SocialProofThree from '@/components/sections/socialProof/SocialProofThree';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
@@ -176,48 +176,37 @@ export default function LandingPage() {
       </div>
       
       <div id="testimonials" data-section="testimonials">
-        <TestimonialCardNine
-          title="Portfolio Company Success Stories"
-          description="Hear from the founders and leaders we've partnered with on their journey to scaling global impact."
-          tag="Testimonials"
-          tagIcon={Star}
-          variant="card"
-          textboxLayout="default"
-          useInvertedBackground="noInvert"
+        <TestimonialCardTwelve
           testimonials={[
             {
               id: "1",
-              quote: "Fresh Fund provided not just capital, but strategic guidance that helped us navigate market challenges and scale from Israel to Europe. Their network was invaluable.",
               name: "Yoni Sharon",
-              role: "Founder & CEO",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765804396097-jszekwda.jpg",
               imageAlt: "Yoni Sharon"
             },
             {
               id: "2",
-              quote: "The team at Fresh Fund understood our vision immediately. They gave us room to innovate while providing the operational expertise we needed to succeed.",
               name: "Noa Mizrahi",
-              role: "CEO",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765804397880-nhgtozxi.jpg",
               imageAlt: "Noa Mizrahi"
             },
             {
               id: "3",
-              quote: "Beyond the funding, Fresh Fund connected us with customers and partners that accelerated our growth by 18 months. That's the difference between good and great investors.",
               name: "Eitan Broido",
-              role: "Founder",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765804399676-8robg5hi.jpg",
               imageAlt: "Eitan Broido"
             },
             {
               id: "4",
-              quote: "Fresh Fund believes in the Israeli tech ecosystem like no other fund we met. Their commitment to our success was genuine and our partnership has been transformational.",
               name: "Rina Gal",
-              role: "CEO & Founder",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765804401002-oykwb8bo.jpg",
               imageAlt: "Rina Gal"
             }
           ]}
+          cardTitle="Portfolio Company Leaders & Founders"
+          cardTag="Success Stories"
+          cardTagIcon={Star}
+          useInvertedBackground="noInvert"
         />
       </div>
       
