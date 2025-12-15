@@ -6,7 +6,7 @@ import HeroBillboardSplit from '@/components/sections/hero/HeroBillboardSplit';
 import TagAboutCard from '@/components/sections/about/TagAboutCard';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
-import TeamCardTen from '@/components/sections/team/TeamCardTen';
+import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
 import SocialProofThree from '@/components/sections/socialProof/SocialProofThree';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
@@ -153,24 +153,31 @@ export default function LandingPage() {
       </div>
       
       <div id="team" data-section="team">
-        <TeamCardTen
+        <TeamCardSix
           title="Leadership Team"
           tag="Meet Our Team"
+          tagIcon={Users}
+          description="The talented people behind our success"
           members={[
             {
               id: "1",
               name: "David Cohen",
+              role: "Managing Partner",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765804392110-jt5c6bod.jpg",
               imageAlt: "David Cohen, Managing Partner"
             },
             {
               id: "2",
               name: "Sarah Levi",
+              role: "Investment Director",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765804393304-2i0d2n58.jpg",
               imageAlt: "Sarah Levi, Investment Director"
             }
           ]}
-          memberVariant="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          containerStyle="default"
+          textboxLayout="default"
           useInvertedBackground="noInvert"
         />
       </div>
